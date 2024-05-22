@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Scroll</title>
+    <style>
+         *{
+            margin: 0;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: darkblue;
+            position: sticky;
+            top: 0;
+            width: 100%;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 12px 14px;
+            text-decoration: none;
+        }
+        li a:hover{
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>Initialize Folder As Git-repo</h2>
+        <h3>Giving the artist something worth living for</h3>
+    </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    <div style="height: 1000px;">
+        <h4>In-demand Artists</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eaque et temporibus at non iusto.</p>
+    </div>
+</body>
+</html>

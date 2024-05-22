@@ -1,0 +1,279 @@
+body{
+    overflow-x: hidden;
+}
+ul{
+    top: 0;
+    list-style: none;
+    width: 100%;
+    /* position: sticky; */
+    background-color: aqua;
+    overflow: hidden;
+}
+li{
+    float: left;
+}
+
+li a{
+    margin: 0.1rem 0.8rem;
+    color: cadetblue;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    /* display: flex; */
+    display: block;
+    padding: 0.8rem 0.5rem;
+}
+li a:hover{
+    background-color: blue;
+}
+
+#contain{
+    border: 1px solid;
+    /* display: grid; */
+    border-radius: 1rem;
+    margin-left: 1.4rem;
+    margin-right: 1.4rem;
+    background-color: aliceblue;
+    gap: 0.4rem;
+    grid-template-areas: 'toprow toprow toprow toprow toprow'
+    'secondrow secondrow secondrow secondrow'
+    'thirdrow thirdrow thirdrow thirdrow'
+    'fourthrow fourthrow fourthrow fourthrow'
+    'lastrow lastrow lastrow lastrow';
+}
+
+.section1{
+    grid-template-rows: toprow;
+}
+
+.section2{
+    grid-template-areas: secondrow;
+    text-align: center;
+}
+
+/* .section3{
+    grid-template-areas: thirdrow;
+}
+
+.section3{
+    grid-template-areas: fourthrow;
+} */
+
+.section4{
+    grid-template-areas: lastrow;
+}
+
+.image{
+    overflow: hidden;
+    background-color: rgb(25, 12, 41);
+}
+
+.Grace{
+    margin: 8px;
+    float: left;
+    top: 5rem;
+    border-radius: 0.7rem;
+    animation: sliding 5s 2s infinite ease;
+}
+
+.image1{
+    width: 28rem;
+    height: 15rem;
+    position: relative;
+    left: -7rem;
+    /* margin-top: 0; */
+}
+
+.image1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.7rem;
+}
+
+.image2{
+    width: 28rem;
+    height: 15rem;
+    position: relative;
+    left: 1rem;
+}
+
+.image2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.7rem;
+}
+
+.image3{
+    width: 28rem;
+    height: 15rem;
+    position: relative;
+    left: 13rem;
+}
+
+.image3 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.7rem;
+}
+
+.image4{
+    width: 28rem;
+    height: 15rem;
+    position: relative;
+    left: -43.5rem;
+    top: -11rem;
+}
+.image4 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.7rem;
+}
+
+.image5{
+    width: 28rem;
+    height: 15rem;
+    position: relative;
+    left: -110.5rem;
+    top: -11rem;
+}
+.image5 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.7rem;
+}
+
+.stories{
+    background-color: rgb(25, 12, 41);
+    color: white;
+}
+
+.story1{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+}
+.story1 .imageContainer {
+    width: 230rem;
+    height: 100%;
+}
+
+.story1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.story1 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+}
+
+.story2{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+}
+.story2 .imageContainer{
+    width: 80rem;
+    height: 100%;
+}
+.story2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.story3{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+}
+
+.story3 .imageContainer{
+    width: 80rem;
+    height: 100%;
+}
+.story3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+button{
+    padding: 0.4rem;
+    margin: 0.4rem;
+    color: orangered;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: darkgray;
+}
+
+h3{
+    color: green;
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1rem;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+}
+
+.section4{
+    margin-top: 3rem;
+}
+
+
+@keyframes sliding{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(120%);
+    }
+    100%{
+        transform: translateX(220%);
+    }
+}
+
+
+.formation{
+    align-items: center;
+}
+
+.formation label{
+    margin: 0.3rem 0.7rem 0.3rem 1rem;
+}
+
+.formation input{
+    margin: 0.3rem 0.7rem 0.3rem 1rem;
+    padding: 0.7rem;
+    background-color: #fff;
+    border: 0.01rem solid #ddd;
+}
+
+.formation button{
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    background-color: rgb(15, 92, 224);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.formation button:hover{
+    background-color: royalblue;
+}
+
+
+/* table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td{
+    background-color: aqua;
+} */

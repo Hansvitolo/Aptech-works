@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Property</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: seagreen;
+            transition: background-color 3s, width 1s, transform 1s;
+        }
+        div:hover{
+            background-color: aqua;
+            width: 400px;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <h2>Transition</h2>
+    <div>
+        <p>
+            Pycharm is easy
+        </p>
+    </div>
+</body>
+</html>

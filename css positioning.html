@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positioning</title>
+    <style>
+      body {
+        height: 2000px;
+      }
+      .static {
+        position: relative;
+        border: 2px solid black;
+        top: 30px;
+      }
+      .absolute {
+        border: 2px solid red;
+        width: 100px;
+        height: 100px;
+      }
+
+      .fixed {
+        position: fixed;
+        background-color: green;
+        color: white;
+        width: 100px;
+        height: 50px;
+      }
+      .sticky {
+        border: 2px solid purple;
+        width: 100px;
+        height: 15px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Various Positions</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, quod!
+    </p>
+    <div class="static">
+      This element has been positioned <em>static</em>
+      <div class="absolute"></div>
+      <div class="fixed"></div>
+      <div class="sticky"></div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum hic quos
+      doloribus enim. Hic consequatur enim autem perferendis maiores
+      praesentium?
+      <hr>
+
+      <h2>Text on Image</h2>
+      <hr>
+
+      <h2>Text On Image</h2>
+
+      <div class="sticky">
+        <img src="samurai-4215748_1280.jpg" alt="" width="1000" height="400">
+        <div class="text">
+            <p>Picture A</p>
+        </div>
+      </div>
+    </p>
+  </body>
+</html>

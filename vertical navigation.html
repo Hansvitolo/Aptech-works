@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Navigation Bar</title>
+    <style>
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: royalblue;
+    height: 100%;
+    position: fixed;
+
+}
+li a{
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: darkblue;
+}
+.content{
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+div.lens{
+    margin: 6px;
+    float: left;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.eye{
+    margin-left: 30px;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Consult</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Ceeing Eyes</h1>
+        <p>
+            At ceeing eyes, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores iusto voluptatum, quia veritatis magnam quam odit, consequuntur aspernatur dolor consequatur atque officiis voluptate error voluptatem eos hic ipsum debitis laudantium.
+        </p>
+        <div class="ordered">
+            <ol>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, enim!</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, enim!</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, enim!</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, enim!</li>
+            </ol>
+        </div>
+
+        <h2>Perfect Vision</h2>
+        <div class="lens">
+            <div class="eye">
+                <a href="imgs/samurai-4215748_1280.jpg" target="_blank">
+                    <img src="imgs/samurai-4215748_1280.jpg" alt="" width="350" height="300">
+                </a>
+                <div class="desc">A samurai warrior</div>
+            </div>
+            <div class="eye">
+                <a href="imgs/7d5b22a7bb943b00ba557ffef754914fe5d7b695.png" target="_blank">
+                    <img src="imgs/7d5b22a7bb943b00ba557ffef754914fe5d7b695.png" alt="" width="350" height="300">
+                </a>
+                <div class="desc">Eyes</div>
+            </div>
+            <div class="eye">
+                <a href="imgs/fantasy-2657122_1280.jpg" target="_blank">
+                    <img src="imgs/african-child-1381553_1280.jpg" alt="" width="350" height="300">
+                </a>
+                <div class="desc">Clear</div>
+            </div>
+        </div>
+        <h2>Services</h2>
+    </div>
+</body>
+</html>

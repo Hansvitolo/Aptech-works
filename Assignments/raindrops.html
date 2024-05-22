@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raindrops</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .sky{
+            background-color: rgb(25, 64, 73);
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        .raindrop{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 40px;
+            top: 20px;
+        }
+        .drop2{
+            top: 90px;
+            transform: scale(2);
+            border-bottom-color: black;
+        }
+        .drop3{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 90px;
+            top: 20px;
+            animation: drops 7s infinite linear;
+        }
+        .drop4{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 90px;
+            top: 40px;
+            animation: drops 4s infinite linear;
+        }
+        .drop5{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 140px;
+            top: 80px;
+            animation: drops 2s infinite linear;
+        }
+        .drop6{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 140px;
+            top: 20px;
+            animation: drops 3s infinite linear;
+        }
+        .drop7{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 180px;
+            top: 20px;
+            animation: drops 1s infinite linear;
+        }
+        .drop8{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 240px;
+            top: 20px;
+            animation: drops 7s infinite linear;
+        }
+        .drop9{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 300px;
+            top: 20px;
+            animation: drops 4s infinite linear;
+        }
+        .drop10{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 340px;
+            top: 20px;
+            animation: drops 3s infinite linear;
+        }
+        .drop11{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 340px;
+            top: 50px;
+            animation: drops 5s infinite linear;
+        }
+        .drop12{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 500px;
+            top: 20px;
+            animation: drops 4s infinite linear;
+        }
+        .drop13{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 500px;
+            top: 68px;
+            animation: drops 6s infinite linear;
+        }
+        .drop14{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 580px;
+            top: 20px;
+            animation: 3s infinite linear;
+        }
+        .drop15{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 580px;
+            top: 70px;
+            animation: drops 1s infinite linear;
+        }
+        .drop16{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 650px;
+            top: 20px;
+            animation: drops 2s infinite linear;
+        }
+        .drop17{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 650px;
+            top: 50px;
+            animation: drops 3s infinite linear;
+        }
+        .drop18{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 610px;
+            top: 20px;
+            animation: drops 10s infinite linear;
+        }
+        .drop19{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 610px;
+            top: 90px;
+            animation: drops 8s infinite linear;
+        }
+        .drop20{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 700px;
+            top: 20px;
+            animation: drops 5s infinite linear;
+        }
+        .drop21{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 700px;
+            top: 12px;
+            animation: 7s infinite linear;
+        }
+        .drop22{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 800px;
+            top: 20px;
+            animation: drops 3s infinite linear;
+        }
+        .drop23{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 800px;
+            top: 45px;
+            animation: drops 1s infinite linear;
+        }
+        .drop24{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 1000px;
+            top: 20px;
+            animation: drops 9s infinite linear;
+        }
+        .drop25{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 1000px;
+            top: 77px;
+            animation: drops 2s infinite linear;
+        }
+        .drop26{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 1100px;
+            top: 20px;
+            animation: drops 2s infinite linear;
+        }
+        .drop27{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 1100px;
+            top: 35px;
+            animation: drops 4s infinite linear;
+        }
+        .drop28{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 1200px;
+            top: 20px;
+            animation: drops 6s infinite linear;
+        }
+        .drop29{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 1200px;
+            top: 44px;
+            animation: drops 3s infinite linear;
+        }
+        .drop30{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 1300px;
+            top: 20px;
+            animation: drops 5s infinite linear;
+        }
+        .drop31{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 1300px;
+            top: 61px;
+            animation: drops 1s infinite linear;
+        }
+        .drop32{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 1400px;
+            top: 20px;
+            animation: drops 5s infinite linear;
+        }
+        .drop33{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #2e86de;
+            border-radius: 50%;
+            left: 1400px;
+            top: 77px;
+            animation: drops 3s infinite linear;
+        }
+        @keyframes drops{
+            0%{
+                transform: translateY(0);
+            }
+            100%{
+                transform: translateY(500px);
+            }
+        }
+        .cloud{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+            /* box-shadow: 4px 4px 8px black; */
+            border-radius: 50%;
+            /* top: 50%; */
+            left: 30%;
+            z-index: 99;
+        }
+        .cld1{
+            position: absolute;
+            top: 0%;
+            left: 5%;
+        }
+        .cld2{
+            position: absolute;
+            top: 5%;
+            left: 10%;
+        }
+        .cld3{
+            position: absolute;
+            top: 0%;
+            left: 18%;
+        }
+        .cld4{
+            position: absolute;
+            top: 0%;
+            left: 27%;
+        }
+        .cld5{
+            position: absolute;
+            top: 0%;
+            left: 60%;
+        }
+        .cld6{
+            position: absolute;
+            top: 0%;
+            left: 40%;
+        }
+        .cld7{
+            position: absolute;
+            top: -3%;
+            left: 76%;
+        }
+        .cld8{
+            position: absolute;
+            top: 0%;
+            left: 90%;
+        }
+        .cld9{
+            position: absolute;
+            top: 0%;
+            left: 85%;
+        }
+        .cld10{
+            position: absolute;
+            top: 1%;
+            left: 34%;
+        }
+        .cld11{
+            position: absolute;
+            top: -1%;
+            left: 32%;
+        }
+        .cld12{
+            position: absolute;
+            top: 5%;
+            left: 85%;
+        }
+        .cld13{
+            position: absolute;
+            top: -2%;
+            left: 45%;
+        }
+        .cld14{
+            position: absolute;
+            top: -1%;
+            left: 1%;
+        }
+        .cld15{
+            position: absolute;
+            top: -2%;
+            left: 2%;
+        }
+        .cld16{
+            position: absolute;
+            top: -2%;
+            left: 5%;
+        }
+        .cld17{
+            position: absolute;
+            top: -2%;
+            left: 12%;
+        }
+        .cld18{
+            position: absolute;
+            top: -2%;
+            left: 65%;
+        }
+        .cld19{
+            position: absolute;
+            top: -2%;
+            left: 50%;
+        }
+        .cld20{
+            position: absolute;
+            top: -2%;
+            left: 39%;
+        }
+        .cld21{
+            position: absolute;
+            top: -2%;
+            left: 70%;
+        }
+        .cld14{
+            position: absolute;
+            top: 5%
+        }
+    </style>
+</head>
+<body>
+    <div class="sky">
+        <div class="clouds" style="z-index: 98;">
+            <div class="cloud cld1"></div>
+            <div class="cloud cld2"></div>
+            <div class="cloud cld3"></div>
+            <div class="cloud cld4"></div>
+            <div class="cloud cld5"></div>
+            <div class="cloud cld6"></div>
+            <div class="cloud cld7"></div>
+            <div class="cloud cld8"></div>
+            <div class="cloud cld9"></div>
+            <div class="cloud cld10"></div>
+            <div class="cloud cld11"></div>
+            <div class="cloud cld12"></div>
+            <div class="cloud cld13"></div>
+            <div class="cloud cld14"></div>
+            <div class="cloud cld15"></div>
+            <div class="cloud cld16"></div>
+            <div class="cloud cld17"></div>
+            <div class="cloud cld18"></div>
+            <div class="cloud cld19"></div>
+            <div class="cloud cld20"></div>
+            <div class="cloud cld21"></div>
+        </div>
+          <div class="raindrop"></div>
+          <div class="raindrop drop3"></div>
+          <div class="raindrop drop4"></div>
+          <div class="raindrop drop5"></div>
+          <div class="raindrop drop6"></div>
+          <div class="raindrop drop7"></div>
+          <div class="raindrop drop9"></div>
+          <div class="raindrop drop10"></div>
+          <div class="raindrop drop11"></div>
+          <div class="raindrop drop12"></div>
+          <div class="raindrop drop13"></div>
+          <div class="raindrop drop14"></div>
+          <div class="raindrop drop15"></div>
+          <div class="raindrop drop16"></div>
+          <div class="raindrop drop17"></div>
+          <div class="raindrop drop18"></div>
+          <div class="raindrop drop19"></div>
+          <div class="raindrop drop20"></div>
+          <div class="raindrop drop21"></div>
+          <div class="raindrop drop22"></div>
+          <div class="raindrop drop23"></div>
+          <div class="raindrop drop24"></div>
+          <div class="raindrop drop25"></div>
+          <div class="raindrop drop26"></div>
+          <div class="raindrop drop27"></div>
+          <div class="raindrop drop28"></div>
+          <div class="raindrop drop29"></div>
+          <div class="raindrop drop30"></div>
+          <div class="raindrop drop31"></div>
+          <div class="raindrop drop32"></div>
+          <div class="raindrop drop33"></div>
+    </div>
+</body>
+</html>

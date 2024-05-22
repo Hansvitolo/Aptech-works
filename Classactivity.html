@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Work</title>
+    <style>
+        h1{
+            /* overflow: hidden; */
+            color: rgb(0, 128, 255);
+            text-shadow: 1px 2px 15px rgba(0, 0, 0, 0.997);
+            animation-name: move;
+            animation-duration: 7s;
+            /* animation-direction: alternate; */
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes move{
+            0%{
+                transform: translateX(0px) rotateY(0deg);
+            }
+            20%{
+                transform: scaleX(30px);
+            }
+            50%{
+                transform: translateY(500px) rotateY(380deg);
+            }
+            100%{
+                transform: scaleX(0px) translateX(700px) rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+<body style="overflow: hidden;">
+    <h1>Divine</h1>
+</body>
+</html>

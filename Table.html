@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th style="width: 50%;" rowspan="2">Food</th>
+            <th style="width: 40%;">Country of origin</th>
+        </tr>
+        <tr>
+            <td>Rice</td>
+        </tr>
+        <tr>
+            <td>Cassava</td>
+            <td>Africa</td>
+        </tr>
+        <tr>
+            <td>Shawarma</td>
+            <td>Turkey</td>
+        </tr>
+        <tr>
+            <td colspan="2">Asia</td>
+        </tr>
+    </table>
+</body>
+</html>

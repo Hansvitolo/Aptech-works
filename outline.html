@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Outline</title>
+    <style>
+        div{
+            width: 300px;
+            height: 150px;
+            outline-color: black;
+            outline-width: 3px;
+            outline-style: solid;
+            border-style: solid;
+            border-color: red;
+            border-width: 3px;
+        }
+
+        div ~ p{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Outline  Property</h2>
+    <div style="outline-color: green;"></div>
+    <h1>using css combinators</h1>
+    <h3>Descendant selector</h3>
+
+    <div>
+        <p>paragraph</p>
+        <p>paragraph</p>
+        <section>
+            <p>paragraph C</p>
+        </section>
+    </div>
+    <p>paragraph outside the div</p>
+    <ol>
+        <li>hi</li>
+    </ol>
+    <p>after and the last element</p>
+</body>
+</html>

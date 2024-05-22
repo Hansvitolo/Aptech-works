@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with icons</title>
+    <script src="https://kit.fontawesome.com/934a2ff6c6.js" crossorigin="anonymous"></script>
+    <style>
+        .navbar{
+            width: 100%;
+            background-color: royalblue;
+            overflow: auto;
+        }
+        .navbar a{
+            float: left;
+            padding: 13px;
+            color: rgb(22, 21, 21);
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .navbar a:hover{
+            background-color: bisque;
+            color: white;
+        }
+        a.active{
+            background-color: darkblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>The International Showroom</h2>
+    <!-- <i class="fa fa-fw fa-home"></i> -->
+    <div class="navbar">
+        <a href="" class="active"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="" class="active"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+        <a href="" class="active"><i class="fa-solid fa-address-book"></i>Contact</a>
+        <a href="" class="active"><i class="fa-solid fa-right-to-bracket"></i>Login</a>
+    </div>
+</body>
+</html>

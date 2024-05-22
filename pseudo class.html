@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class</title>
+    <style>
+        h2:hover{
+            color: green;
+            font-size: 50px;
+        }
+
+        a:link{
+            color: seagreen;
+            text-decoration: none;
+        }
+        a:visited{
+            color: rgb(8, 0, 255);
+        }
+        a:active{
+            color: orangered;
+        }
+        a:hover{
+            color: rgb(63, 63, 60);
+        }
+
+        .pos1 button{
+            width: 200px;
+            background-color: aqua;
+            font-size: 18px;
+        }
+
+        body{
+            height: 1000px;
+        }
+
+        button{
+            position: relative;
+            top: 60px;
+            /* right: 13px; */
+        }
+    </style>
+</head>
+<body>
+   <h2>The middle</h2>
+   <a href="#g">Read more</a>
+   <h1>CSS Positioning</h1>
+   <div class="pos1">
+    <button>Click</button>
+   </div>
+</body>
+</html>

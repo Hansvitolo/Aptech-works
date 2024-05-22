@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using Float</title>
+    <style>
+      img {
+        float: left;
+        margin-right: 13px;
+        margin-bottom: 13px;
+      }
+      .box{
+        float: left;
+        width: 300px;
+        padding: 15px;
+        text-align: center;
+      }
+      .clearbox::after{
+        clear: both;
+        content: " ";
+        display: table;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Float left exercise</h2>
+    <img
+      src="imgs/7d5b22a7bb943b00ba557ffef754914fe5d7b695.png"
+      alt=""
+      width="170"
+      height="170"
+    />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolorem,
+      natus architecto a repellendus quis.
+    </p>
+
+    <p style="clear: left;">
+      I went for classes. Lorem ipsum, dolor sit amet consectetur adipisicing
+      elit. Iusto voluptas itaque quibusdam, a recusandae officiis eos
+      aspernatur nam, maxime ad vitae nemo nostrum ducimus ipsam autem
+      perferendis aperiam! Asperiores rerum reiciendis maxime dolores labore
+      dolorem est exercitationem delectus modi accusantium. Culpa veritatis
+      cumque temporibus sunt a molestiae delectus fuga accusantium.
+    </p>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    
+    <div class="clearbox">
+        <div class="box" style="background-color: aqua;">
+            <p>Text is here</p>
+        </div>
+        <div class="box" style="background-color: bisque;">
+            <p>Text is here</p>
+        </div>
+        <div class="box" style="background-color: aquamarine;">
+            <p>Text is here</p>
+        </div>
+    </div>
+    <button>Send Mail</button>
+  </body>
+</html>

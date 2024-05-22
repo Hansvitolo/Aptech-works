@@ -1,0 +1,28 @@
+p{
+    color: darkblue;
+    background-color: bisque;
+}
+
+nav{
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: ;
+}
+
+.Text{
+    display: flex;
+    width: 500px;
+}
+
+.ace{
+    display: flex;
+    justify-content: space-between;
+}

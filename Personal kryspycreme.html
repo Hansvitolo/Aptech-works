@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kryspy Kreme - Doughnuts, Coffee and Drinks</title>
+    <link rel="stylesheet" href="imgs/krispy project/logo.png">
+    <style>
+        ul{
+            overflow: hidden;
+            /* display: block; */
+        }
+        .quickbar{
+            background-color: blue;
+            max-width: fit-content;
+            list-style: none;
+            float: left;
+            padding: 15px 0px 0px 20px;
+            display: block;
+            margin: 10px;
+        }
+        /* li{
+            max-width: fit-content;
+            list-style: none;
+            float: left;
+            padding: 15px 0px 0px 20px;
+            display: block;
+            margin: 10px;
+        } */
+        li a{
+            color: #046a38;
+            display: inline-block;
+            position: relative;
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        li a:hover{
+            display: inline-block;
+            width: 100%;
+            color: #046a38;
+        }
+        li a:after{
+            content: '__________________';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            bottom: 0;
+            left: 0;
+            transform-origin: bottom left;
+            transition: transform .25s ease-in-out;
+        }
+        li a:hover:after{
+            /* z-index: 101; */
+            /* text-decoration-line: underline; */
+            /* color: #046a38; */
+            transform: scaleX(5%);
+            transform-origin: bottom left;
+            /* animation-name: underline; */
+            /* top: 0; */
+            /* bottom: 0; */
+            /* right: 100%; */
+            /* width: 100%; */
+            /* min-width: 100%; */
+            /* transform: scaleX(100); */
+        }
+
+        @keyframes underline{
+            0%{
+
+            }
+        }
+        img{
+            margin: -10px 0px 0px;
+            padding: 18px;
+            float: left;
+            justify-content: space-around;
+        }
+        button{
+            border: none;
+            padding: 14px;
+            border-radius: 20px;
+            margin: 20px;
+            background-color: #c8102e;
+        }
+        button:hover{
+            translate: 2px 1px;
+            transition: 0.3s;
+            background-color: rgb(206, 54, 54);
+        }
+        button a{
+            color: white;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 12px 0px 1px 8px;
+            font-weight: 700;
+        }
+        h1{
+            text-align: center;
+            color: #046a38;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+            font-weight: 700;
+        }
+        p{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        /* .secondbar{
+            display: flex;
+            position: relative;
+            margin: 50px;
+            padding-left: 250px;
+            float: left;
+            overflow: hidden;
+            width: 100%;
+            background-color: gold;
+            float: left;
+            justify-content: space-around;
+            text-align: left;
+        } */
+        div .doughnut{
+            width: 370px;
+            height: 40px;
+            float: left;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <div class="quickbar">
+        <img src="imgs/krispy project/logo.png" alt="">
+        <ul>
+            <li><a href="Menu">MENU</a></li>
+            <li><a href="Catering">CATERING</a></li>
+            <li><a href="Rewards">REWARDS</a></li>
+            <li><a href="Gift Cards">GIFT CARDS</a></li>
+            <li><a href="Fundraising">FUNDRAISING</a></li>
+            <li><a href="Retail">RETAIL</a></li>
+            <button><a href="Order">ORDER DELIVERY</a></button>
+            <button><a href="Order">ORDER PICKUP</a></button>
+        </ul>
+    </div>
+    <div class="main">
+        <h1>DOUGHNUTS</h1>
+        <p>Daily selection varies by shop</p>
+    </div>
+    <div class="secondbar">
+        <ul>
+            <li><a href="ALL" style="color: #c8102e; text-decoration-line: underline;">ALL</a></li>
+            <li><a href="FEATURED">FEATURED</a></li>
+            <li><a href="ICED">ICED</a></li>
+            <li><a href="GLAZED">GLAZED</a></li>
+            <li><a href="FILLED">FILLED</a></li>
+            <li><a href="CAKE">CAKE</a></li>
+            <li><a href="CHOCOLATE">CHOCOLATE</a></li>
+        </ul>
+    </div>
+    <div class="doughnuts">
+        <div class="doughnut" style="background-color: rgb(88, 51, 5);">
+            <img src="imgs/krispy project/11281-top-view-(1).png" alt="">
+            <a href="kit-kat">KIT KAT® CRUNCH DOUGHNUT</a>
+        </div>
+        <div class="doughnut">
+            <img src="imgs/krispy project/11615-top-view-(1).png" alt="">
+            <a href="kit-kat">KIT KAT® CRUNCH DOUGHNUT</a>
+        </div>
+        <div class="doughnut">
+            <img src="imgs/krispy project/11616-top-view-(1).png" alt="">
+            <a href="kit-kat">KIT KAT® CRUNCH DOUGHNUT</a>
+        </div>
+        <div class="dougnut">
+            <img src="imgs/krispy project/Krispy-Kreme-Original-Glazed-Doughnut (1).png" alt="">
+            <a href="kit-kat">KIT KAT® CRUNCH DOUGHNUT</a>
+        </div>
+    </div>
+</body>
+</html>

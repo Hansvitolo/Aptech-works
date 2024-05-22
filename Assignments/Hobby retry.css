@@ -1,0 +1,122 @@
+ul{
+    top: 0;
+    list-style: none;
+    width: 100%;
+    /* position: sticky; */
+    background-color: aqua;
+    overflow: hidden;
+}
+li{
+    float: left;
+}
+
+li a{
+    margin: 0.1rem 0.8rem;
+    color: cadetblue;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    /* display: flex; */
+    display: block;
+    padding: 0.8rem 0.5rem;
+}
+li a:hover{
+    background-color: blue;
+}
+
+.Grace{
+    margin: 8px;
+    float: left;
+    top: 5rem;
+    border-radius: 0.7rem;
+    width: 28rem;
+    height: 15rem;
+}
+
+.image1{
+    width: 28rem;
+    height: 15rem;
+    position: relative;
+    left: -7rem;
+    /* margin-top: 0; */
+}
+
+.image1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.7rem;
+}
+
+.image2{
+    width: 28rem;
+    height: 15rem;
+    position: relative;
+    left: 1rem;
+}
+
+.image2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.7rem;
+}
+
+.image3{
+    width: 28rem;
+    height: 15rem;
+    position: relative;
+    left: 13rem;
+}
+
+.image3 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.7rem;
+}
+
+.image4{
+    width: 28rem;
+    height: 15rem;
+    position: relative;
+    left: -43.5rem;
+    top: -11rem;
+}
+.image4 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.7rem;
+}
+
+.image5{
+    width: 28rem;
+    height: 15rem;
+    position: relative;
+    left: -110.5rem;
+    top: -11rem;
+}
+.image5 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.7rem;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 400px 300px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.row-text{
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.row-text > button{
+    background-color: royalblue;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    padding: 8px;
+    color: white;
+}

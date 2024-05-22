@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Module</title>
+    <style>
+        .flex-contain{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            /* justify-content: space-around, space-between, flex-end, flex start; */
+            flex-wrap: wrap;
+            flex-flow: row wrap;
+            background-color: orange;
+            padding: 10px;
+            height: 300px;
+            /* align-content: center; */
+        }
+        .item1{
+            font-size: 1.4em;
+            padding: 12px;
+            text-align: center;
+            background-color: yellow;
+            margin: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Use of Flex</h1>
+    <div class="flex-contain">
+        <div class="item1" style="order: 1;">A</div>
+        <div class="item1" style="order: 3;">B</div>
+        <div class="item1" style="order: 5; flex-grow: 5;">C</div>
+        <div class="item1" style="order: 7; align-self: flex-end;">D</div>
+        <div class="item1" style="order: 9; flex-basis: 70px; flex-shrink: 15;">E</div>
+        <div class="item1" style="order: 11;">F</div>
+        <div class="item1" style="order: 2;">G</div>
+        <div class="item1" style="order: 4;">H</div>
+        <div class="item1" style="order: 6;">I</div>
+        <div class="item1" style="order: 8;">J</div>
+        <div class="item1" style="order: 10;">K</div>
+    </div>
+</body>
+</html>

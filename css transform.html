@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform Method</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: royalblue;
+            transform: scale(2);
+        }
+        img{
+            width: 400px;
+            transition: width 2s, transform 3s;
+        }
+        .trans{
+            width: 120px;
+            height: 60px;
+            background-color: orange;
+            transform: translate(90px, 50px);
+        }
+        img:hover{
+            transform: rotate(120deg);
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Using the Scale Methods</h2>
+    <div></div>
+    <h2>Using the Rotate Method</h2>
+    <img src="imgs/7d5b22a7bb943b00ba557ffef754914fe5d7b695.png" alt="">
+    <h2>Using the Translate Method</h2>
+    <div class="trans"></div>
+</body>
+</html>

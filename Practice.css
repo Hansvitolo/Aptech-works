@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    display: flex;
+    padding: 16px;
+}
+
+.single-pricing{
+    flex: 1;
+    width: 0;
+}
+.single-pricing:not(:last-child){
+    margin-right: 16px;
+}
+
+.deals{
+    border: 1px solid #eee;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+}
+.deals:hover{
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+.deals .plans{
+    background-color: rgb(15, 112, 78);
+    color: #fff;
+    font-size: 24px;
+    font-family:  Arial, Helvetica, sans-serif;
+}
+.deals li{
+    background-color: #262626;
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.deals .custom-color{
+    background-color: #4ecaac;
+}
+button{
+    background-color: #262626;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    padding: 12px 70px;
+    font-size: 16px;
+}
+.single-pricing:hover .deals .custom-color{
+    background-color: #f36b4f;
+    transition: 0.9s;
+}
+.single-pricing:hover .deals .plans{
+    background-color: #f12e07;
+    transition: 0.9s;
+}
+
+
+@media screen (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+@media screen (max-width: 767px){
+    
+}

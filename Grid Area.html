@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area</title>
+    <style>
+        .gridcontain{
+            margin-left: 20px ;
+            margin-right: 20px ;
+            display: grid;
+            background-color: red;
+            gap: 8px;
+            grid-template-areas: 'topheader topheader topheader topheader topheader'
+            'bodymenu topmain topmain topmain bodyright'
+            'bodymenu bodyfoot bodyfoot bodyfoot bodyfoot';
+            padding: 8px;
+        }
+        .gridcontain > div{
+            color: white;
+            background-color: orangered;
+            font-weight: bold;
+            /* text-align: center; */
+        }
+        .item1{
+            grid-area: topheader;
+        }
+        .item2{
+            grid-area: bodymenu;
+        }
+        .item3{
+            grid-area: topmain;
+        }
+        .item4{
+            grid-area: bodyright;
+        }
+        .item5{
+            grid-area: bodyfoot;
+        }
+
+        .boxes{
+            width: 250px;
+            height: 100px;
+            background-color: cyan;
+            border: 1px solid gray;
+            margin: 20px;
+            float: left;
+        }
+        .boxes img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="gridcontain">
+        <div class="item1">Header</div>
+        <div class="item2"><img src="imgs/7d5b22a7bb943b00ba557ffef754914fe5d7b695.png" style="width: 100px; height: 100px;" alt="">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, laborum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum facilis iure porro alias quam sunt animi corrupti quas, nobis quibusdam.</p></div>
+        <div class="item3">Main Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi praesentium nostrum, mollitia, architecto aut amet quidem sequi saepe quibusdam facere dolore voluptate quas. Praesentium laboriosam libero dolores quibusdam, eaque eos eius officiis. Dolorem eos esse cum optio totam, nisi doloremque, velit quae obcaecati facere laborum rerum veritatis tempore illo. Possimus?<br>
+        <div class="boxes"></div>
+        <div class="boxes"><img src="imgs/african-child-1381553_1280.jpg" alt=""></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        </div>
+        <div class="item4"><img src="imgs/secret-3120483_1280.jpg" style="width: 400px; height: 200px;" alt="">
+        <p>Lorem ipsum dolor sit amet.</p>
+    <img src="imgs/handgun-231696.jpg" style="width: 350px; height: 200px;" alt=""></div>
+        <div class="item5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias exercitationem eius veniam quae commodi enim tenetur iste. Autem, perspiciatis?<br>
+        <p>String theory Lorem ipsum dolor sit amet consectetur adipisicing elit. A doloremque mollitia facilis reprehenderit impedit quibusdam sequi corporis magni officia quasi.</p></div>
+    </div>
+</body>
+</html>

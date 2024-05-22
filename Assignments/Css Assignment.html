@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="img gallery.css">
+    <style>
+        .box{
+        float: left;
+        width: 300px;
+        height: 300px;
+        padding: 15px;
+        text-align: center;
+        margin-left: 20px;
+        border-radius: 40px;
+      }
+      .clearbox::after{
+        clear: both;
+        content: " ";
+        display: table;
+      }
+      h1{
+        font-style: oblique;
+        color: greenyellow;
+        background-color: black;
+      }
+      img{
+        border-radius: 15px;
+      }
+    </style>
+</head>
+<body style="background-image: url(imgs/forest-7774205_1280.jpg);">
+    <h1>Demiris and co HMO</h1>
+    <div class="contain">
+        <div class="clearbox">
+            <div class="box" style="background-color: aqua;">
+                <p>0-12
+                    <p>This is a plan for little kids. It is geared towards providing care, ranging from immunization shots, to fixing of braces and other basic care should the fall ill</p>
+                </p>
+            </div>
+            <div class="box" style="background-color: bisque;">
+                <p>13-18
+                    <p>This plan is dedicated to teenage kids and include care such as, second immunization shots, basic medical check-ups and dentist appointments. It does not however include care for major breaks of bones or any major operations</p>
+                </p>
+            </div>
+            <div class="box" style="background-color: aquamarine;">
+                <p>19-30
+                    <p>Young adults are engaged in a number of activities that exposes them to a lot of adverse effects. This plan was made with that in mind and include options such as; basic medical care and check-ups, tretment of STIs and also cover the cost of any major operations by up to 40%</p>
+                </p>
+            </div>
+            <div class="box" style="background-color: lightcoral;">
+                <p>31+
+                    <p>This plan was put together with the idea that these individuals are adults and may even have family. It includes options such as; basic medical care and check-ups, covers the cost of major operations by 30% except in the case of the elderly, in which case 70%. For clients who are married and are with kids, this plan makes room for an accompanying family package, that comes with free basic medical checkups for the children</p>
+                </p>
+            </div>
+        </div>
+        <h2>About Page</h2>
+        <p>For more information you can make reference to this page. Our contact information and social media handles are available. Feel free to reach us through these channels. We are available for your requests and inquiries</p>
+        <p style="font-weight: bold;">Contact: 08123456789</p>
+        <div class="button">
+            <a href="https://www.facebook.com/login"><img src="imgs/icons8-facebook-48.png" alt=""></a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en"><img src="imgs/icons8-insta-48.png" alt=""></a>
+            <a href="https://twitter.com/login"><img src="imgs/icons8-twitter-50.png" alt=""></a>
+            <a href="https://mail.google.com/mail/u/0"><img src="imgs/icons8-mail-48.png" alt=""></a>
+        </div>
+        <div class="gallery">
+            <a href="imgs/samurai-4215748_1280.jpg" target="_blank">
+                <img src="imgs/samurai-4215748_1280.jpg" alt="" width="350" height="300">
+            </a>
+            <div class="desc">A samurai warrior</div>
+        </div>
+        <div class="gallery">
+            <a href="imgs/african-child-1381553_1280.jpg" target="_blank">
+                <img src="imgs/african-child-1381553_1280.jpg" alt="" width="350" height="300">
+            </a>
+            <div class="desc">African children</div>
+        </div>
+        <div class="gallery">
+            <a href="imgs/7d5b22a7bb943b00ba557ffef754914fe5d7b695.png" target="_blank">
+                <img src="imgs/7d5b22a7bb943b00ba557ffef754914fe5d7b695.png" alt="" width="350" height="300">
+            </a>
+            <div class="desc">A woman's portrait</div>
+        </div>
+    </div>
+    
+</body>
+</html>
