@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Air Baloon</title>
+    <link rel="stylesheet" href="Baloon Assignment.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <nav>
+                <div class="logo">
+                    <img src="images/imgs/logo.png" alt="">
+                </div>
+                <div class="nav-link">
+                    <ul>
+                        <li class="active"><a href="Home">Home</a></li>
+                        <li><a href="Blog">Blog</a></li>
+                        <li><a href="Services">Services</a></li>
+                        <li><a href="About">About</a></li>
+                    </ul>
+                </div>
+                <div class="menu-icon">
+                    <img src="images/imgs/menu.png" alt="">
+                </div>
+            </nav>
+        </div>
+
+        <div class="content">
+            <div class="social-icons">
+                <img src="images/imgs/instagram.png" alt="">
+                <img src="images/imgs/facebook.png" alt="">
+                <img src="images/imgs/twitter.png" alt="">
+                <img src="images/imgs/youtube.png" alt="">
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="search">
+                <img src="images/imgs/search.png" alt="">
+            </div>
+        </div>
+        <img src="images/imgs/cloud.png" id="clouds" alt="">
+        <img src="images/imgs/plane.png" id="plane" alt="">
+        <div id="balloon">
+            <img src="images/imgs/balloon.png" class="balloon1" alt="">
+            <img src="images/imgs/balloon.png" class="balloon2" alt="">
+            <img src="images/imgs/balloon.png" class="balloon3" alt="">
+        </div>
+
+        <img src="images/imgs/pause.png" id="pause">
+    </div>
+
+    <script>
+        var pause = document.getElementById("pause");
+        var clouds = document.getElementById("clouds");
+        var plane = document.getElementById("plane");
+        var balloon = document.getElementById("balloon");
+
+        clouds.style.webkitAnimationPlaystate = "running";
+                plane.style.webkitAnimationPlaystate = "running";
+                balloon.style.webkitAnimationPlaystate = "running";
+
+        pause.onclick = function () {
+            // console.log(clouds.style.webkitAnimationPlaystate)
+            // console.log(plane.style.webkitAnimationPlaystate)
+            // console.log(balloon.style.webkitAnimationPlaystate)
+            if (clouds.style.webkitAnimationPlaystate === "paused") {
+                console.log('play')
+                clouds.style.webkitAnimationPlaystate = "running";
+                plane.style.webkitAnimationPlaystate = "running";
+                balloon.style.webkitAnimationPlaystate = "running";
+                pause.src = 'images/imgs/pause.png';
+            }
+            else if (clouds.style.webkitAnimationPlaystate === "running") {
+                // console.log(clouds.style.webkitAnimationPlaystate)
+                console.log('pause')
+                clouds.style.webkitAnimationPlaystate = "paused";
+                plane.style.webkitAnimationPlaystate = "paused";
+                balloon.style.webkitAnimationPlaystate = "paused";
+                pause.src = 'images/imgs/play.png';
+            }
+            else{
+                console.log('End')
+            }
+        }
+    </script>
+</body>
+
+</html>
